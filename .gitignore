@@ -1,0 +1,38 @@
+# Go
+api/routeml-api
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Python
+ml/__pycache__/
+ml/*.pyc
+ml/.venv/
+ml/model/
+ml/*.joblib
+ml/*.pkl
+
+# Node
+dashboard/node_modules/
+dashboard/dist/
+dashboard/.cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+*.log
+
+# Env
+.env
+.env.local

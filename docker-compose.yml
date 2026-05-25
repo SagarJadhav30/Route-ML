@@ -1,0 +1,34 @@
+version: "3.9"
+
+services:
+  ml:
+    build: ./ml
+    ports:
+      - "5000:5000"
+    volumes:
+      - ml-models:/app/model
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  api:
+    build: ./api
+    ports:
+      - "8080:8080"
+    environment:
+      - ML_SERVICE_URL=http://ml:5000
+    depends_on:
+      ml:
+        condition: service_healthy
+
+  dashboard:
+    build: ./dashboard
+    ports:
+      - "5173:80"
+    depends_on:
+      - api
+
+volumes:
+  ml-models:
