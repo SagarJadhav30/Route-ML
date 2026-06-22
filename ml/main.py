@@ -10,7 +10,7 @@ import sys
 import joblib
 import numpy as np  
 from fastapi import FastAPI 
-from fastapi.middleware.cors import CORSMiddleware
+from fastapi.middleware.cors import CORSMiddleware 
 from pydantic import BaseModel
 
 MODEL_DIR = os.path.join(os.path.dirname(__file__), "model")
