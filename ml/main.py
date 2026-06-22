@@ -9,7 +9,7 @@ import sys
 
 import joblib
 import numpy as np  
-from fastapi import FastAPI
+from fastapi import FastAPI 
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
