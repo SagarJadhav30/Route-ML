@@ -28,7 +28,7 @@ np.random.seed(SEED)
 # ---------------------------------------------------------------------------
 # 1. Synthetic data generation
 # ---------------------------------------------------------------------------
-
+ 
 def generate_data(n: int = N_SAMPLES) -> pd.DataFrame:
     distance_km = np.random.lognormal(mean=2.0, sigma=0.8, size=n).clip(0.5, 120)
     hour_of_day = np.random.randint(0, 24, size=n)
