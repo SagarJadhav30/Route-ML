@@ -169,7 +169,7 @@ def train():
     model_high = lgb.LGBMRegressor(
         objective="quantile",
         alpha=0.90,
-        n_estimators=400,
+        n_estimators=400, 
         learning_rate=0.05,
         max_depth=7,
         num_leaves=50,
