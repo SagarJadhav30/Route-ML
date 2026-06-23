@@ -97,7 +97,7 @@ def generate_data(n: int = N_SAMPLES) -> pd.DataFrame:
             "is_weekend": is_weekend,
             "delivery_time_minutes": np.round(delivery_time, 2),
         }
-    )
+    ) 
     return df
 
 
