@@ -62,7 +62,7 @@ def generate_data(n: int = N_SAMPLES) -> pd.DataFrame:
     traffic_mult[is_weekend == 1] *= np.random.uniform(0.80, 0.90, size=(is_weekend == 1).sum())
 
     # ---------- Weather effects ----------
-    weather_mult = np.ones(n)
+    weather_mult = np.ones(n) 
     rain_mask = weather == "rain"
     snow_mask = weather == "snow"
     weather_mult[rain_mask] *= np.random.uniform(1.10, 1.20, size=rain_mask.sum())
