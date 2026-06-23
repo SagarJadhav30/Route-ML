@@ -37,7 +37,7 @@ def generate_data(n: int = N_SAMPLES) -> pd.DataFrame:
 
     is_rush_hour = ((hour_of_day >= 7) & (hour_of_day <= 9)) | (
         (hour_of_day >= 17) & (hour_of_day <= 19)
-    )
+    ) 
     is_weekend = (day_of_week >= 5).astype(int)
 
     # Base speed: 30-40 km/h in city
