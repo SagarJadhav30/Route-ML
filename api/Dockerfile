@@ -11,3 +11,4 @@ WORKDIR /app
 COPY --from=build /app/routeml-api .
 EXPOSE 8080
 CMD ["./routeml-api"]
+
