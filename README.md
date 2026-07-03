@@ -53,7 +53,7 @@ You give it a route (origin, destination, distance, time of day, weather). It re
 This is the core argument. Here are concrete examples.
 
 **1. Non-linear traffic patterns**
-
+ 
 A formula says rush hour = 1.45x. Always. But 8am Monday in January is different from 5pm Friday in summer. The formula can't tell them apart. LightGBM learns splits like "if hour=8 AND day=0 AND weather=snow, then add 18 minutes" -- automatically, from data.
 
 **2. Feature interactions the formula ignores**
