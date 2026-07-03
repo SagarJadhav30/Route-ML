@@ -56,7 +56,7 @@ This is the core argument. Here are concrete examples.
  
 A formula says rush hour = 1.45x. Always. But 8am Monday in January is different from 5pm Friday in summer. The formula can't tell them apart. LightGBM learns splits like "if hour=8 AND day=0 AND weather=snow, then add 18 minutes" -- automatically, from data.
 
-**2. Feature interactions the formula ignores**
+**2. Feature interactions the formula ignores** 
 
 Snow during rush hour is not `1.4 * 1.45 = 2.03x`. It's worse. Accidents spike. Plows block lanes. The multiplicative model underestimates compound effects. Tree-based models capture these interactions natively through their branching structure.
 
