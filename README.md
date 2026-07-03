@@ -3,7 +3,7 @@
 ML-powered delivery ETA prediction engine. Trained on synthetic data, served over a Go API, visualized in a React dashboard.
 
 This exists because formula-based approaches (distance / speed * multiplier) hit a ceiling fast. The real world is non-linear. ML learns that.
-
+ 
 ## What it does
 
 You give it a route (origin, destination, distance, time of day, weather). It returns:
