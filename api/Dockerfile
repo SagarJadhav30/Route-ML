@@ -10,4 +10,4 @@ RUN apk add --no-cache ca-certificates curl
 WORKDIR /app
 COPY --from=build /app/routeml-api .
 EXPOSE 8080
-CMD ["./routeml-api"]
+CMD ["./routeml-api"] 
