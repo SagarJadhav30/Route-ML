@@ -6,7 +6,7 @@ COPY . .v
 RUN CGO_ENABLED=0 go build -o routeml-api . 
  
 FROM alpine:3.19
-RUN apk add --no-cache ca-certificates curl
+RUN apk add --no-cache ca-certificates curl 
 WORKDIR /app
 COPY --from=build /app/routeml-api .
 EXPOSE 8080
